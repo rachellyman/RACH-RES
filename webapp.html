@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spirit Animal Generator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f3f4f6;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    h1 {
+      color: #333;
+      margin-bottom: 1rem;
+    }
+
+    #animalName {
+      font-size: 60px;
+      font-weight: bold;
+      color: #ff69b4;
+      text-shadow: 0 0 5px #ff69b4;
+      margin-top: 20px;
+      display: none;
+    }
+
+    .btn {
+      background-color: #4CAF50;
+      color: white;
+      padding: 14px 20px;
+      margin: 10px 0;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      font-size: 18px;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Discover Your Spirit Animal</h1>
+  <p>Click the button below to find out which animal represents your spirit!</p>
+  <br>
+  <button class="btn" onclick="generateSpiritAnimal()">Find My Spirit Animal</button>
+  
+  <div>
+    <p id="animalName"></p>
+  </div>
+
+  <script>
+    const spiritAnimals = [
+      "Lion",
+      "Wolf",
+      "Eagle",
+      "Bear",
+      "Tiger",
+      "Golden Retriever",
+      "Sheep",
+      "Naked Mole Rat",
+      "Aye-Aye",
+      "Pink Fairy Armadillo",
+      "Red-lipped batfish",
+      "Star-nosed mole",
+      "Goblin Shark",
+      "Blobfish",
+      "Axolotl",
+      "Capybara",
+      "Quokka",
+      "Dumbo Octopus",
+      "Proboscis Monkey",
+      "Saiga",
+      "Tufted Deer",
+      "Chinese giant salamander",
+      "Sloth",
+      "Newt",
+      "A chicken",
+      "A chihuahua",
+      "a shrimp",
+      "a firefly",
+      "a stinkbug",
+      "a pygmy goat",
+      "a tiny little worm",
+    ];
+
+    function generateSpiritAnimal() {
+      // Get a random animal from the array
+      const randomAnimal = spiritAnimals[Math.floor(Math.random() * spiritAnimals.length)];
+
+      // Display the animal name in sparkly text
+      const animalName = document.getElementById("animalName");
+      animalName.textContent = randomAnimal;
+      animalName.style.display = "block";
+    }
+  </script>
+</body>
+</html>
+

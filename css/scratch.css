@@ -1,0 +1,53 @@
+/* Reset default margins/padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body styles */
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    line-height: 1.6;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Container for your content */
+  .container {
+    max-width: 800px;
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Headings */
+  h1, h2, h3 {
+    color: #1e90ff;
+    margin-bottom: 1rem;
+  }
+  
+  /* Paragraphs */
+  p {
+    margin-bottom: 1rem;
+  }
+  
+  /* Buttons */
+  button {
+    background-color: #1e90ff;
+    color: white;
+    padding: 0.6rem 1.2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0d6efd;
+  }
+  
